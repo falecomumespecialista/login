@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FK Contabilidade | Despachante Documentalista - Rio de Janeiro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: var(--primary) !important;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1511&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+        }
+        
+        .icon-feature {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-file-contract me-2"></i>
+                <span class="fw-bold">FK Contabilidade</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentos">Documentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Soluções contábeis e documentação veicular</h1>
+            <p class="lead mb-5">Há mais de 18 anos cuidando da burocracia para você</p>
+            <a href="#servicos" class="btn btn-primary btn-lg px-4 me-2">Nossos Serviços</a>
+            <a href="https://wa.me/5521991943224" class="btn btn-whatsapp btn-lg px-4">
+                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Nossos Serviços</h2>
+                <p class="lead text-muted">Soluções completas para sua vida documental</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3 class="card-title">Despachante Veicular</h3>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Licenciamento</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Transferência</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2ª Via de Documentos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Baixa por Sinistro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3 class="card-title">Contabilidade</h3>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Abertura de Empresas</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Declaração de Impostos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Folha de Pagamento</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Consultoria Fiscal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-feature">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="card-title">Pessoa Física</h3>
+                            <ul class="list-unstyled text-start">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Declaração de IRPF</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Regularização de CPF</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Consulta de Débitos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Certidões Negativas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents -->
+    <section id="documentos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title fw-bold">Documentos Necessários</h2>
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h4 class="mb-3"><i class="fas fa-car text-primary me-2"></i>Para Veículos</h4>
+                            <ul class="mb-4">
+                                <li class="mb-2">CRV/CRLV original</li>
+                                <li class="mb-2">RG e CPF do proprietário</li>
+                                <li class="mb-2">Comprovante de residência</li>
+                                <li class="mb-2">Certidões negativas de débitos</li>
+                            </ul>
+                            
+                            <h4 class="mb-3"><i class="fas fa-building text-primary me-2"></i>Para Empresas</h4>
+                            <ul>
+                                <li class="mb-2">Contrato Social</li>
+                                <li class="mb-2">RG e CPF dos sócios</li>
+                                <li class="mb-2">Comprovante de endereço</li>
+                                <li class="mb-2">Documentos específicos conforme atividade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h2 class="section-title fw-bold">Como Funciona</h2>
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <h5>Contato Inicial</h5>
+                                    <p class="mb-0">Entre em contato informando qual serviço precisa e tire suas dúvidas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <h5>Envio de Documentos</h5>
+                                    <p class="mb-0">Envie os documentos digitalizados por WhatsApp ou e-mail.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <h5>Análise e Orçamento</h5>
+                                    <p class="mb-0">Analisamos sua demanda e enviamos orçamento sem compromisso.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <h5>Conclusão do Serviço</h5>
+                                    <p class="mb-0">Realizamos todo processo e entregamos os documentos prontos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                         class="img-fluid rounded" alt="Sobre a FK Contabilidade">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title fw-bold">Sobre Nós</h2>
+                    <p class="lead">Sua tranquilidade documental é nosso compromisso</p>
+                    <p>A FK Contabilidade e Despachante atua desde 2005 no mercado carioca, oferecendo soluções completas em contabilidade e despachante documentalista.</p>
+                    <p>Nossa equipe é formada por profissionais experientes e atualizados com as mudanças legais, garantindo que todos os processos sejam realizados com agilidade e dentro da legislação vigente.</p>
+                    
+                    <div class="mt-4">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-0">Missão</h5>
+                                <p class="mb-0">Simplificar a vida documental de pessoas e empresas com excelência.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-0">Visão</h5>
+                                <p class="mb-0">Ser referência em serviços contábeis e documentais no Rio de Janeiro.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-0">Valores</h5>
+                                <p class="mb-0">Ética, transparência, comprometimento e atendimento personalizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Entre em Contato</h2>
+                    <p class="mb-4">Estamos prontos para ajudar com suas necessidades contábeis e documentais.</p>
+                    
+                    <div class="mb-4">
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Rua São Caetano do Sul 105, Vila Valqueire, Rio de Janeiro - RJ, 21330-000</p>
+                        <p><i class="fas fa-phone-alt me-2"></i> (21) 99194-3224</p>
+                        <p><i class="fas fa-envelope me-2"></i> fkcontabilidade@hotmail.com</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Horário de Atendimento:</h5>
+                        <p>Segunda a Sexta: 8h às 18h<br>
+                        Sábado: 9h às 13h</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/5521991943224" class="text-white me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Seu E-mail" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Seu Telefone" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>Selecione um serviço</option>
+                                <option>Despachante Veicular</option>
+                                <option>Contabilidade</option>
+                                <option>Declaração de IRPF</option>
+                                <option>Abertura de Empresa</option>
+                                <option>Outros Serviços</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="mb-3"><i class="fas fa-file-contract me-2"></i> FK Contabilidade</h5>
+                    <p class="small mb-0">CNPJ: 01.727.596/0001-99</p>
+                    <p class="small">Razão Social: F&K Contabilidade e Despachante LTDA</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small mb-0">&copy; 2023 FK Contabilidade. Todos os direitos reservados.</p>
+                    <p class="small">Desde 2005 facilitando sua vida documental</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
